@@ -27,6 +27,11 @@ public class LifeCycleActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.w(TAG,"onResume --->");
+    }
 
     @Override
     protected void onDestroy() {

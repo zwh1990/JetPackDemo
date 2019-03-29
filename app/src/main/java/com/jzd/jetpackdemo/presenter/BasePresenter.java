@@ -22,6 +22,11 @@ public class BasePresenter implements IPresenter {
     }
 
     @Override
+    public void onResume(@NonNull LifecycleOwner owner) {
+        Log.w(TAG,"onResume --->");
+    }
+
+    @Override
     public void onDestory(@NonNull LifecycleOwner owner) {
         Log.w(TAG,"onDestory --->");
     }
